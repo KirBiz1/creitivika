@@ -65,10 +65,10 @@ Child1 = input("сколько собрал первый?")
 Child2 = input("сколько собрал второй?")
 Child3 = input("сколько собрал третий?")
 icecream = input("сколько стоит мороженное?")
-Child1 = int(Child1)
+Child1 = float(Child1)
 Child2 = float(Child2)
-Child3 = int(Child3)
-icecream = int(icecream)
+Child3 = float(Child3)
+icecream = float(icecream)
 print("осталось или не хватает:",(Child1+Child2+Child3)-icecream)
 
 
