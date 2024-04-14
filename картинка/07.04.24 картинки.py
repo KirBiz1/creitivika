@@ -132,7 +132,73 @@ new_image2.close()
 image3.close()
 new_image3.close()
 """
+"""
+Задание 4
+from PIL import Image
+point = input("Как повернуть картинку? Направо на 90 градусов, налево, вверх ногами или оставить, как есть.")
+if point.lower() == "направо на 90 градусов":
+    image = Image.open('tiger.jpg')
+    new_image = image.rotate(240)
+    new_image.save("tiger right.jpg")
+    image.close()
+    new_image.close()
+if point.lower == "налево на 90 градусов":
+    image = Image.open('tiger.jpg')
+    new_image = image.rotate(90)
+    new_image.save("tiger left.jpg")
+    image.close()
+    new_image.close()
+if point.lower == "вверх ногами":
+    image = Image.open('tiger.jpg')
+    new_image = image.rotate(180)
+    new_image.save("tiger3.jpg")
+    image.close()
+    new_image.close()
+if point.lower == "оставить как есть":
+    print()
+else:
+    print("Команда не ясна")
+"""
+"""
+задание 5
+from PIL import Image
+art = input("Что сделать с картинкой: обрезать, повернуть, показать формат, изменить формат.Если вам больше не надо редактировать напишите стоп.")
+if art == "обрезать":
+    rez = int(input("Насколько хотите обрезать?"))
+    rez1 = int(input("Насколько хотите обрезать?"))
+if art == "повернуть":
+    pov = input("Насколько хотите повернуть?")
+if art == "показать формат":
+    print()
+if art == "поменять формат":
+    fr = input("На какой формат хотели бы вы поменять? ")
+while art != "стоп":
+    if art == "поменять формат":
+        img = Image.open("lion.jpg")
+        new_img = img.resize((rez, rez1))
+        new_img.save("lion2.jpg")
+        img.close()
+        new_img.close()
+"""
 
+from PIL import image
+for a in range(1,4):
+    img = image = Image.open('1.jpg')
+    
+
+
+        
+    
+    
+    
+        
+        
+        
+    
+    
+    
+    
+    
 
 
 
