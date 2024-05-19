@@ -71,9 +71,40 @@ slovo = input("Введите новое имя: ")
 name.append(slovo)
 print(name)
 """
-
+"""
 animals = ["Кот","Лев","Тигр"]
-с = int(input("Какое слово заменить? "))
+c = float(input("Какое слово заменить? "))
 if c == 1:
-    a = input("Введите новое слово ")
+    animals[0] = input("Введите новое слово ")
+    print(animals)
+if c == 2:
+    animals[1] = input("Введите новое слово ")
+    print(animals)
+if c == 3:
+    animals[2] = input("Введите новое слово ")
+    print(animals)
+"""
+"""
+sp = ["#", "#", "*", "#"]
+kom = str(input("Напишите куда пойти звезде: вправо, влево"))
+ch = 2
+while kom != "stop": 
+    if kom == "вправо":
+        ch = ch + 1
+        if ch == 4:
+            ch = 3
+        sp[ch] = "*"
+        sp[ch - 1] = "#"
+    if kom == "влево":
+        ch = ch - 1
+        if ch == -1:
+            ch = 0
+        sp[ch] = "*"
+        sp[ch + 1] = "#"
+    for slovo in sp:
+        print(slovo, end="")
+    kom = input("Напишите куда пойти звезде: вправо, влево")
+"""
+
+
     
